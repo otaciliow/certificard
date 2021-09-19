@@ -1,0 +1,49 @@
+@mixin body {
+    font-family: 'Roboto Mono', monospace;
+    min-height:400px;
+    background-image:url('https://image.flotation.com/icons/png/512/201/201635.png');
+    background:#0c0c0c;
+    background-size:80vh;
+    background-position:center bottom;
+    background-repeat:no-repeat;
+}
+
+@mixin displayFlex {
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+}
+
+body {
+    @include body();
+    color:#fcfcfc;
+}
+
+.container {
+    @include displayFlex;
+    height:100vh;
+    width:100%;
+    
+    .input-container {
+        display:flex;
+        justify-content:space-between;
+        width:25%;
+        margin-top:1em;
+        font-size:18px;
+    }
+
+    button {
+        width:200px;
+        height:50px;
+        margin-top:1.5em;
+        font-size:20px;
+    }
+
+    #final {
+        display:none;
+
+        input {
+            color:#fcfcfc;
+        }
+    }
+}
