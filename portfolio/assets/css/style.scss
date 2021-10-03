@@ -1,8 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&display=swap');
 
+@mixin setIcons {
+    font-size:30px;
+    vertical-align:middle;
+    margin-bottom:4px;
+}
+
 body {
     background:linear-gradient(236.85deg, #6A359C 27.26%, #B589D6 96.03%);
     font-family:'Poppins', sans-serif;
+    transition:all 0.7s ease;
+}
+
+body.dark {
+    background:linear-gradient(236.85deg, #552586 27.26%, #804FB3 96.03%);
+
+    .container {
+        background:#1C1C1C;
+        color:#ECF4FF;
+
+        p {
+            color: #1C1C1C;
+        }
+    }
+
+    .tema {
+        border:1px solid #ECF4FF;
+
+        span {
+            border: 2px solid #ECF4FF;
+            margin-left:1.4em;
+        }
+    }
 }
 
 .container {
@@ -16,6 +45,11 @@ body {
 }
 
 .perfil {
+    display:flex;
+    justify-content:space-between;
+}
+
+.infos {
     display:flex;
     align-items:center;
     
@@ -36,10 +70,61 @@ body {
         max-height:160px;
         box-shadow:0px 4px 4px #0C0C0C;
     }
+
+    #code {
+        color:#F4730B;
+        @include setIcons();
+    }
+}
+
+.tema {
+    display:flex;
+    align-items:center;
+    padding: 2px 5px;
+    height:38px;
+    width:75px;
+    border:1px solid #1C1C1C;
+    border-radius:26px;
+    cursor:pointer;
+
+    span {
+        font-size:30px;
+        border:2px solid #1C1C1C;
+        box-shadow: 2px 2px 4px #1C1C1C;
+        border-radius:50%;
+        transition:all 0.5s ease;
+    }
+
 }
 
 .projetos {
     display:flex;
     flex-direction:column;
-    align-items:center;
+    // align-items:center;
+    background:linear-gradient(230.65deg, #9969C7 27.49%, #B589D6 83.19%);
+    margin-top:1.5em;
+    padding:1em;
+    border-radius:20px;
+    box-shadow:2px 2px 4px rgba (16,16,16,0.42);
+
+    span {
+        font-size:32px;
+        font-weight:700;
+        color:#1C1C1C;
+    }
+
+    li {
+        list-style:none;
+        font-size:22px;
+
+        a {
+            text-decoration:none;
+            color:#1C1C1C;
+        }
+
+        span {
+            @include setIcons();
+            margin-right:0.5em;
+        }
+    }
 }
