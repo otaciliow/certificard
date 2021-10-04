@@ -1,12 +1,10 @@
 body {
   font-family: 'Roboto Mono', monospace;
   min-height: 400px;
-  background-image: url("https://image.flotation.com/icons/png/512/201/201635.png");
-  background: #0c0c0c;
   background-size: 80vh;
   background-position: center bottom;
   background-repeat: no-repeat;
-  color: #fcfcfc;
+  color: #1C1C1C;
 }
 
 .container {
@@ -22,6 +20,10 @@ body {
           flex-direction: column;
   height: 100vh;
   width: 100%;
+  background-image: url("https://www.kindpng.com/picc/m/99-990695_aladdin-png-galore-genie-aladdin-transparent-png.png");
+  background-size: 80vh;
+  background-position: center bottom;
+  background-repeat: no-repeat;
 }
 
 .container .input-container {

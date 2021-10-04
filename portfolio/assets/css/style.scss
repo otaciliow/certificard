@@ -3,7 +3,6 @@
 @mixin setIcons {
     font-size:30px;
     vertical-align:middle;
-    margin-bottom:4px;
 }
 
 body {
@@ -113,18 +112,19 @@ body.dark {
         color:#1C1C1C;
     }
 
-    li {
+    summary {
         list-style:none;
-        font-size:22px;
-
-        a {
-            text-decoration:none;
-            color:#1C1C1C;
-        }
 
         span {
             @include setIcons();
             margin-right:0.5em;
+            font-size:22px;
+            font-weight:500;
         }
     }
+    a {
+        text-decoration:none;
+        color:#1C1C1C;
+    }
+
 }

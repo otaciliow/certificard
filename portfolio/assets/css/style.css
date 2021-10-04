@@ -81,7 +81,6 @@ body.dark .tema span {
   color: #F4730B;
   font-size: 30px;
   vertical-align: middle;
-  margin-bottom: 4px;
 }
 
 .tema {
@@ -131,20 +130,20 @@ body.dark .tema span {
   color: #1C1C1C;
 }
 
-.projetos li {
+.projetos summary {
   list-style: none;
-  font-size: 22px;
 }
 
-.projetos li a {
-  text-decoration: none;
-  color: #1C1C1C;
-}
-
-.projetos li span {
+.projetos summary span {
   font-size: 30px;
   vertical-align: middle;
-  margin-bottom: 4px;
   margin-right: 0.5em;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.projetos a {
+  text-decoration: none;
+  color: #1C1C1C;
 }
 /*# sourceMappingURL=style.css.map */
