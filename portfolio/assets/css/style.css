@@ -19,6 +19,10 @@ body.dark .container p {
   color: #1C1C1C;
 }
 
+body.dark .container .redes a {
+  color: #ECF4FF;
+}
+
 body.dark .tema {
   border: 1px solid #ECF4FF;
 }
@@ -77,10 +81,30 @@ body.dark .tema span {
           box-shadow: 0px 4px 4px #0C0C0C;
 }
 
+.infos .redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.infos .redes a {
+  text-decoration: none;
+  color: #1C1C1C;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.infos .redes a i {
+  margin-right: 0.2em;
+}
+
 .infos #code {
   color: #F4730B;
   font-size: 30px;
   vertical-align: middle;
+  margin-left: 0.2em;
 }
 
 .tema {
@@ -132,6 +156,11 @@ body.dark .tema span {
 
 .projetos summary {
   list-style: none;
+  cursor: pointer;
+}
+
+.projetos summary .drop {
+  visibility: hidden;
 }
 
 .projetos summary span {
@@ -142,8 +171,26 @@ body.dark .tema span {
   font-weight: 500;
 }
 
+.projetos .video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1em;
+}
+
 .projetos a {
   text-decoration: none;
   color: #1C1C1C;
+}
+
+.projetos a .link {
+  font-size: 18px;
+}
+
+.projetos summary:hover .drop {
+  visibility: visible;
 }
 /*# sourceMappingURL=style.css.map */
